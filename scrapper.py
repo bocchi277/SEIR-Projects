@@ -9,7 +9,7 @@ def loadUrl(userUrl):
         driver.get(userUrl)
         time.sleep(4)
         content = driver.page_source
-        driver.quit()
+        driver.close()
     except Exception:
         return None
     if content:
